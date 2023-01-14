@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
+import 'package:get_x/view/language.dart';
 
 import 'first_view.dart';
 
@@ -75,7 +76,12 @@ class _HomeState extends State<Home> {
                 onPressed: () {
                   Get.to(FirstView());
                 },
-                child: Text("Next Screen"))
+                child: Text("Next Screen")),
+            TextButton(
+                onPressed: () {
+                  Get.to(Language());
+                },
+                child: Text("Language Changer")),
           ],
         ),
       ),
