@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
+import 'package:get_x/view/get_conuter_example.dart';
 import 'package:get_x/view/language.dart';
 
 import 'first_view.dart';
@@ -82,6 +83,11 @@ class _HomeState extends State<Home> {
                   Get.to(Language());
                 },
                 child: Text("Language Changer")),
+            TextButton(
+                onPressed: () {
+                  Get.to(Counter());
+                },
+                child: Text("Conter Example")),
           ],
         ),
       ),
