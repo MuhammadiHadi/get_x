@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 class Counter extends StatefulWidget {
@@ -9,6 +11,17 @@ class Counter extends StatefulWidget {
 
 class _CounterState extends State<Counter> {
   int x = 0;
+
+  @override
+  void initState() {
+    Timer.periodic(Duration(seconds: 1), (timer) {
+      x++;
+      setState(() {});
+    });
+    // TODO: implement initState
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     print("counter");
