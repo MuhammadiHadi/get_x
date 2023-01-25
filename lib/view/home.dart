@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get_x/view/get_conuter_example.dart';
 import 'package:get_x/view/language.dart';
+import 'package:get_x/view/list_view/auto_scrol_view.dart';
 
 import 'first_view.dart';
 
@@ -88,6 +89,11 @@ class _HomeState extends State<Home> {
                   Get.to(Counter());
                 },
                 child: Text("Conter Example")),
+            TextButton(
+                onPressed: () {
+                  Get.to(AutoList());
+                },
+                child: Text("AutoList Example")),
           ],
         ),
       ),
