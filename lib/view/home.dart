@@ -4,6 +4,7 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:get_x/view/get_conuter_example.dart';
 import 'package:get_x/view/language.dart';
 import 'package:get_x/view/list_view/auto_scrol_view.dart';
+import 'package:get_x/view/page.dart';
 
 import 'first_view.dart';
 
@@ -92,6 +93,11 @@ class _HomeState extends State<Home> {
             TextButton(
                 onPressed: () {
                   Get.to(AutoList());
+                },
+                child: Text("AutoList Example")),
+            TextButton(
+                onPressed: () {
+                  Get.to(CoderPage());
                 },
                 child: Text("AutoList Example")),
           ],
